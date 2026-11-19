@@ -1,0 +1,48 @@
+/* Paleta institucional IPET 249 */
+:root {
+  --bordo: #6b1020;
+  --bordo-oscuro: #3d0912;
+  --amarillo: #f2c230;
+  --rojo: #d63232;
+  --blanco: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bordo-oscuro);
+  color: var(--blanco);
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  padding: 12px;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  width: 100%;          /* se adapta al ancho disponible */
+  height: auto;
+  aspect-ratio: 8 / 3;  /* mantiene la proporción 800x300 */
+  background: var(--bordo);
+  border: 4px solid var(--amarillo);
+  border-radius: 6px;
+  touch-action: manipulation;
+}
+
+.ayuda {
+  margin: 10px 0 0;
+  color: var(--amarillo);
+  font-size: 0.9rem;
+}
